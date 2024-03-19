@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:ital,wdth,wght@0,87.5,300;1,87.5,300&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #0D3244;
+    --secondary-color: #EAECEC;
+    --accent1-color: #2FB5DA;
+    --accent2-color: #8ECAE6;
+    --accent3-color: #FB8500;
+
+    --heading-font: "Merriweather", serif;
+    --paragraph-font: "Open Sans", sans-serif;
+
+    --nav-background-color: #8ECAE6;
+    --nav-link-color: #2FB5DA;
+    --nav-hover-link-color: #FB8500;
+    --nav-hover-background-color: #0D3244;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-background-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
