@@ -1,51 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     max-width: 840px;
 }
 
+
 nav {
-    background-color: steelblue;
+    background-color: #0D3244;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: #EAECEC;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
 }
 
 h1 {
     color: steelblue;
+    text-align: center;
+    padding: 10px;
 }
 
  main img {
+    float: right;
+    margin: 0 1rem 0 1rem;
     width: 150px;
     height: auto;
     border: 2px solid steelblue;
-    padding: 1px;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 0;
+    text-align: left;
+    margin: 1rem 1rem 3rem 1rem;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    padding: 1rem;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    background-color: #b3e6e0;
-    color: #691b41;
+    position: relative;
+    width: 23em;
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 40px;
+    left: 110px;
 }
 
 footer {
     margin-top: 15px;
     border-top: 2px solid rgba(0, 0, 0, 0.3);
+    text-align:center;
+}
+
+footer p {
     text-align: center;
+}
+
+/* Class Selectors*/
+
+.box {
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: steelblue;
+    color: #EAECEC;
+
+}
+
+.box a {
+    color: #EAECEC;
+}
+
+a:hover {
+    color: #FB8500;
 }
