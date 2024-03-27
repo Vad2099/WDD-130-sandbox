@@ -1,0 +1,177 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:ital,wdth,wght@0,87.5,300;1,87.5,300&display=swap');
+
+/* Definición de variables */
+:root {
+    --primary-color: #00327D;
+    --secondary-color: #000;
+    --accent1-color: #EAECEC;
+    --accent2-color: #8ECAE6;
+    --accent3-color: #FB8500;
+
+    --heading-font: "Merriweather", serif;
+    --paragraph-font: "Open Sans", sans-serif;
+
+    --nav-background-color: #8ECAE6;
+    --nav-link-color: #2FB5DA;
+    --nav-hover-link-color: #FB8500;
+    --nav-hover-background-color: #0D3244;
+}
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Estilos para el encabezado */
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    width: 160px;
+}
+
+/* Estilos para los párrafos */
+p {
+    padding: 25px;
+    color: var(--secondary-color); /* Añadir color al texto */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-background-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Estilos para la sección Hero */
+.hero {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    display: block; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:var(--accent1-color); /* Añadir color al texto */
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+    background-color: rgba(0, 50, 125, 0.4);
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero article p {
+    font-size:larger;
+    font-style:italic;
+    font-weight:600;
+}
+
+.hero article {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent1-color); /* Añadir color al texto */
+    z-index: 0; /* Asegura que el texto esté encima de la imagen */
+    background-color: rgba(142, 202, 230, 0.6); /* Color de fondo con opacidad */
+    padding: 30px; /* Añadir espacio alrededor del contenido */
+    width: 900px /* Establecer el ancho máximo del artículo */
+}
+
+.hero article img {
+    width: 300px;
+    height: 200px;
+    float: right; /* Imagen flotante a la derecha del texto */
+    margin-left: 100px; /* Añadir margen izquierdo para separar la imagen del texto */
+}
+
+section {
+    position: relative;
+    margin-top: 30px;
+}
+
+section img {
+    margin-top: 30px;
+}
+
+
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+footer p {
+    position: absolute;
+    left: 330px;
+}
+
+.sociallinks {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    background-color: var(--nav-background-color);
+}
+  
+.sociallinks a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+  
+.sociallinks img {
+    width: 30px;
+    margin: 0 10px;
+    display: inline-block;
+}
+  
