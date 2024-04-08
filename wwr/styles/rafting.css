@@ -247,12 +247,12 @@ footer p {
 
 .sociallinks {
   display: grid;
-  grid-template-columns: 1rf;
+  grid-row: auto;
   background-color: var(--nav-background-color);
 }
 
 .sociallinks a{
-    grid-row: 1;
+    grid-row: 1/2;
 }
 
 .sociallinks img{
